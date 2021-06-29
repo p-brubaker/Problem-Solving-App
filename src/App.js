@@ -8,7 +8,7 @@ const mathFuncs = {
   'sin': Math.sin,
   'tan': Math.tan,
   'sqrt': Math.sqrt,
-  'ln': Math.sqrt,
+  'ln': Math.log,
   'arctan': Math.atan,
   'acos': Math.acos,
   'arcsin': Math.asin,
@@ -231,7 +231,7 @@ function nestWithPows(arr) {
         newFunc = {'nodeType': 'function', 'name': 'pow'};
         newFunc.children = [leftSide, rightSide];
         arr = [...arr.slice(0, k), newFunc, ...arr.slice(j+1, arr.length)];
-        i = i - ( leftSide.length | 1 + rightSide.length || 1);
+        i = i - ( leftSide.length || 1 + rightSide.length || 1);
         if (k === 0) {
           kFlag = true;
         } 
