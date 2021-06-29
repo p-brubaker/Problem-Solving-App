@@ -6,8 +6,8 @@ This app will allow complex problem solving to be done quickly, efficiently and 
 
 # Current project goals: 
 
-- Rebuild the functioning React App environment (I unwisely neglected to push some of my code to GitHub and subsequently suffered a data loss when my old computer failed.)
-- Create and hook up a user friendly graphical interface
+- Rebuild the functioning React App environment (I unwisely neglected to push some of my code to GitHub and subsequently suffered a data loss when my old computer failed.) (Done)
+- Create and hook up a user friendly graphical interface (next)
 - add support for units and dimensional analysis checking
 - fix major bug that crashes the app in certain cases when multivariable function nodes are created by adding an accumulator to the main algorithm's recursive function nesting process
 
