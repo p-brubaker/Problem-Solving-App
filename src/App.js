@@ -46,7 +46,7 @@ function replaceItem(arr, a, b) {
   return newArr;
 }
 
-function cleanTexString(args) {
+export function cleanTexString(args) {
   let [texString, row, givens] = args;
   let arr = texString.split('');
   arr = replaceItem(arr, '\\', '#');
