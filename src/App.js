@@ -337,7 +337,7 @@ function selectNode(tree, node) {
   return newTree;
 }
 
-function addChild(tree, node, latex, givens) {
+function addChild(tree, node, latex, unitLatex, givens) {
   let newTree = tree;
   newTree.forEach(item => {
     if (!item.nodeType) {
@@ -347,12 +347,13 @@ function addChild(tree, node, latex, givens) {
           console.log([latex, item.row, givens]);
           item.children = nestWithPows(subNodes(cleanTexString([latex, item.row, givens])));
           item.latexValue = latex;
+          item.unit = unitLatex;
           item.isSelected = false;
         } else if (item.children) {
-          addChild(item.children, node, latex, givens);
+          addChild(item.children, node, latex, unitLatex, givens);
         }
       } else if (item.nodeType === 'function') {
-        addChild(item.children, node, latex, givens);
+        addChild(item.children, node, latex, unitLatex, givens);
       } 
   })
   return newTree;
@@ -382,11 +383,11 @@ const App = () => {
     })
   }
 
-  const makeNewExpression = (tree, node, latex) => {
+  const makeNewExpression = (tree, node, latex, unitLatex) => {
   
     setAppState({
       ...appState,
-      expressionTree: addChild(tree, node, latex, appState.givens),
+      expressionTree: addChild(tree, node, latex, unitLatex, appState.givens),
       selectedNode: 'undefined'
     })
   }
