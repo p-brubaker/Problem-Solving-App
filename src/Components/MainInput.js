@@ -17,7 +17,7 @@ const MainInput = (props) => {
   return (
       <div className="container main-input">
         <p>Type An Expression Below</p>
-        <div className="input field">
+        <div>
         <EditableMathField
         latex={latex}
         onChange={(mathField) => {
@@ -25,6 +25,7 @@ const MainInput = (props) => {
         }}
         />
         </div>
+        <div>
         <p>Type the expression's unit below</p>
         <EditableMathField
         latex={unitLatex}
@@ -32,6 +33,7 @@ const MainInput = (props) => {
           setUnitLatex(mathField.latex())
         }}
         />
+        </div>
         <button className="main-input-submit" onClick={() => 
           props.makeNewExpression(props.expressions, props.selectedNode, String.raw`${latex}`, String.raw`${unitLatex}`)}>
             Submit
