@@ -7,7 +7,7 @@ This app will allow complex problem solving to be done quickly, efficiently and 
 # Current project goals: 
 
 - Rebuild the functioning React App environment (I unwisely neglected to push some of my code to GitHub and subsequently suffered a data loss when my old computer failed.) (Done)
-- Create and hook up a user friendly graphical interface (next)
+- Create and hook up a user friendly graphical interface
 - add support for units and dimensional analysis checking (getting there)
 - fix bug caused by needing accumulator
 - remove lines from mathquill that find look for function names and instead insert functions from the GUI
