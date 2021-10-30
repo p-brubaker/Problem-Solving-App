@@ -1,6 +1,6 @@
 # Problem Solving App
 
-This is my long term backburner project. The immediate goal is to provide a new intuitive way for students from the level of advancd high school through undergraduate college to solve physics problems that have an answer consisting of a number with a unit. I have tested this concept on 200 level college physics homework problems and it is highly effective, but slow to implement with pencil and paper due to the recursive nature of the problem solving process. 
+This is my long term backburner project. The immediate goal is to provide a new intuitive way for students from the level of advancd high school through undergraduate college to solve physics problems that have an answer consisting of a number with a unit. I have tested this concept on 200 level college physics homework problems and it is highly effective, but slow to implement with pencil and paper due to the recursive nature of the problem solving process. (essentially  a formalized version of means-ends analysis)
 
 This app will allow complex problem solving to be done quickly, efficiently and rigourously, entirely through the use of a graphical interface. 
 
