@@ -11,5 +11,5 @@ This app will allow complex problem solving to be done quickly, efficiently and 
 - add support for units and dimensional analysis checking (getting there)
 - fix bug caused by needing accumulator
 - remove lines from mathquill that find look for function names and instead insert functions from the GUI
-- switch out react-mathquill for mathquill, add math stuff GUI menu and user mathquill's write method to inject the right HTML into the mathfields when a user clicks a button
+- switch out react-mathquill for mathquill, make my own mathquill wrapper that supports add math stuff GUI menu and user mathquill's write method to inject the right HTML into the mathfields when a user clicks a button
 
